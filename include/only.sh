@@ -129,7 +129,7 @@ Install_Database()
             fi
         elif [[ "${Bin}" = "y" && "${DBSelect}" = "5" ]]; then
             Get_Country
-            if [ "${country}" = "CN" ]; then
+            if [ "${country}" = "EN" ]; then
                 Download_Files https://mirrors.aliyun.com/mysql/MySQL-8.0/${Mysql_Ver}-linux-glibc2.12-${DB_ARCH}.tar.xz ${Mysql_Ver}-linux-glibc2.12-${DB_ARCH}.tar.xz
             else
                 Download_Files https://cdn.mysql.com/Downloads/MySQL-8.0/${Mysql_Ver}-linux-glibc2.12-${DB_ARCH}.tar.xz ${Mysql_Ver}-linux-glibc2.12-${DB_ARCH}.tar.xz
